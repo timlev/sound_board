@@ -13,7 +13,7 @@ def check_downloaded_word(word, directory="./"):
 
 def download(word, directory="./"):
     if check_downloaded_word(word, directory):
-        return
+        return 0
     base = "http://dictionary.cambridge.org/us/dictionary/american-english/"
     qmid = "?q="
     #end = "#"
