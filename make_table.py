@@ -6,14 +6,12 @@ datafile = ""
 if len(sys.argv) > 1:
     datafile = sys.argv[1]
 else:
-    datafile = "3rd grade words.csv"
+    datafile = "5th grade academic vocabulary.csv"
 
 rawdata = []
 if datafile.endswith(".txt"):
     with open(datafile, "r") as fp:
         rawdata = fp.readlines()
-
-print str(rawdata[0])
 
 csvfilename = datafile
 title = csvfilename[:csvfilename.rfind(".")]
@@ -28,9 +26,6 @@ with open(csvfilename, "r") as csvfile:
     csvreader = csv.reader(csvfile)
     for row in csvreader:
         data.append(row)
-
-print data
-sys.exit()
 
 #Form HTML BLOB
 htmlblob = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
