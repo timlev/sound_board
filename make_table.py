@@ -38,6 +38,9 @@ htmlblob = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<meta name="generator" content="Geany 1.23.1" />
 	<link rel="stylesheet" type="text/css" href='../css_file.css'>
 	<script>
+		function onpreload(obj){
+			console.log("Preloaded: " + obj.id);
+		};
 		function revert_color(obj){
 			setTimeout(function (){document.getElementById(obj.id).style.backgroundColor = 'transparent';},1000);
 		};
@@ -60,7 +63,7 @@ for row in data:
     htmlblob += "<tr>\n"
     for item in [x for x in row if x != ""]:
 		htmlblob += "<td>\n"
-		htmlblob += """\t<audio src='""" + item + """.mp3' id='"""+ item + """'> \n"""
+		htmlblob += """\t<audio src='""" + item + """.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='"""+ item + """'> \n"""
 		htmlblob += """\t</audio>\n"""
 		htmlblob += """\t<div id='""" + item + """_text' onClick="play(document.getElementById('""" + item + """'));">""" + item + """</div>\n"""
 		htmlblob += "</td>\n"
