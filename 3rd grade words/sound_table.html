@@ -30,6 +30,17 @@
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="generator" content="Geany 1.23.1" />
 	<link rel="stylesheet" type="text/css" href='css_file.css'>
+	<script>
+	function playword(word){
+		audioObj = document.getElementById(word);
+		txtObj = document.getElementById(word + "_text");
+		audioObj.addEventListener("ended", function(){
+			txtObj.style.backgroundColor = "transparent";
+		});
+		txtObj.style.backgroundColor = "yellow";
+		audioObj.play();
+	};
+	</script>
 </head>
 
 <body>
@@ -39,7 +50,7 @@
 <td>
 	<audio src='additional.mp3' id='additional'> 
 	</audio>
-	<div id='additional_text' onClick="document.getElementById('additional').play();">additional</div>
+	<div id='additional_text' onClick="playword('additional')">additional</div>
 </td>
 <td>
 	<audio src='flexible.mp3' id='flexible'> 

@@ -8,6 +8,17 @@
 	<meta name="generator" content="Geany 1.23.1" />
 	<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href='../css_file.css'>
+	<script>
+	function playword(word){
+		audioObj = document.getElementById(word);
+		txtObj = document.getElementById(word + "_text");
+		audioObj.addEventListener("ended", function(){
+			txtObj.style.backgroundColor = "transparent";
+		});
+		txtObj.style.backgroundColor = "yellow";
+		audioObj.play();
+	};
+	</script>
 </head>
 
 <body>
@@ -17,684 +28,684 @@
 <td>
 	<audio src='accumulate.mp3' id='accumulate'>
 	</audio>
-	<div id='accumulate_text' onClick="document.getElementById('accumulate').play();">accumulate</div>
+	<div id='accumulate_text' onClick="playword('accumulate')">accumulate</div>
 </td>
 <td>
 	<audio src='concept.mp3' id='concept'>
 	</audio>
-	<div id='concept_text' onClick="document.getElementById('concept').play();">concept</div>
+	<div id='concept_text' onClick="playword('concept')">concept</div>
 </td>
 <td>
 	<audio src='generate.mp3' id='generate'>
 	</audio>
-	<div id='generate_text' onClick="document.getElementById('generate').play();">generate</div>
+	<div id='generate_text' onClick="playword('generate')">generate</div>
 </td>
 <td>
 	<audio src='partner.mp3' id='partner'>
 	</audio>
-	<div id='partner_text' onClick="document.getElementById('partner').play();">partner</div>
+	<div id='partner_text' onClick="playword('partner')">partner</div>
 </td>
 <td>
 	<audio src='status.mp3' id='status'>
 	</audio>
-	<div id='status_text' onClick="document.getElementById('status').play();">status</div>
+	<div id='status_text' onClick="playword('status')">status</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='accurate.mp3' id='accurate'>
 	</audio>
-	<div id='accurate_text' onClick="document.getElementById('accurate').play();">accurate</div>
+	<div id='accurate_text' onClick="playword('accurate')">accurate</div>
 </td>
 <td>
 	<audio src='consistent.mp3' id='consistent'>
 	</audio>
-	<div id='consistent_text' onClick="document.getElementById('consistent').play();">consistent</div>
+	<div id='consistent_text' onClick="playword('consistent')">consistent</div>
 </td>
 <td>
 	<audio src='hypothesis.mp3' id='hypothesis'>
 	</audio>
-	<div id='hypothesis_text' onClick="document.getElementById('hypothesis').play();">hypothesis</div>
+	<div id='hypothesis_text' onClick="playword('hypothesis')">hypothesis</div>
 </td>
 <td>
 	<audio src='perspective.mp3' id='perspective'>
 	</audio>
-	<div id='perspective_text' onClick="document.getElementById('perspective').play();">perspective</div>
+	<div id='perspective_text' onClick="playword('perspective')">perspective</div>
 </td>
 <td>
 	<audio src='substitute.mp3' id='substitute'>
 	</audio>
-	<div id='substitute_text' onClick="document.getElementById('substitute').play();">substitute</div>
+	<div id='substitute_text' onClick="playword('substitute')">substitute</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='achieve.mp3' id='achieve'>
 	</audio>
-	<div id='achieve_text' onClick="document.getElementById('achieve').play();">achieve</div>
+	<div id='achieve_text' onClick="playword('achieve')">achieve</div>
 </td>
 <td>
 	<audio src='context.mp3' id='context'>
 	</audio>
-	<div id='context_text' onClick="document.getElementById('context').play();">context</div>
+	<div id='context_text' onClick="playword('context')">context</div>
 </td>
 <td>
 	<audio src='impact.mp3' id='impact'>
 	</audio>
-	<div id='impact_text' onClick="document.getElementById('impact').play();">impact</div>
+	<div id='impact_text' onClick="playword('impact')">impact</div>
 </td>
 <td>
 	<audio src='persuade.mp3' id='persuade'>
 	</audio>
-	<div id='persuade_text' onClick="document.getElementById('persuade').play();">persuade</div>
+	<div id='persuade_text' onClick="playword('persuade')">persuade</div>
 </td>
 <td>
 	<audio src='sustain.mp3' id='sustain'>
 	</audio>
-	<div id='sustain_text' onClick="document.getElementById('sustain').play();">sustain</div>
+	<div id='sustain_text' onClick="playword('sustain')">sustain</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='acknowledge.mp3' id='acknowledge'>
 	</audio>
-	<div id='acknowledge_text' onClick="document.getElementById('acknowledge').play();">acknowledge</div>
+	<div id='acknowledge_text' onClick="playword('acknowledge')">acknowledge</div>
 </td>
 <td>
 	<audio src='contradict.mp3' id='contradict'>
 	</audio>
-	<div id='contradict_text' onClick="document.getElementById('contradict').play();">contradict</div>
+	<div id='contradict_text' onClick="playword('contradict')">contradict</div>
 </td>
 <td>
 	<audio src='imply.mp3' id='imply'>
 	</audio>
-	<div id='imply_text' onClick="document.getElementById('imply').play();">imply</div>
+	<div id='imply_text' onClick="playword('imply')">imply</div>
 </td>
 <td>
 	<audio src='pose.mp3' id='pose'>
 	</audio>
-	<div id='pose_text' onClick="document.getElementById('pose').play();">pose</div>
+	<div id='pose_text' onClick="playword('pose')">pose</div>
 </td>
 <td>
 	<audio src='symbol.mp3' id='symbol'>
 	</audio>
-	<div id='symbol_text' onClick="document.getElementById('symbol').play();">symbol</div>
+	<div id='symbol_text' onClick="playword('symbol')">symbol</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='adequate.mp3' id='adequate'>
 	</audio>
-	<div id='adequate_text' onClick="document.getElementById('adequate').play();">adequate</div>
+	<div id='adequate_text' onClick="playword('adequate')">adequate</div>
 </td>
 <td>
 	<audio src='cooperate.mp3' id='cooperate'>
 	</audio>
-	<div id='cooperate_text' onClick="document.getElementById('cooperate').play();">cooperate</div>
+	<div id='cooperate_text' onClick="playword('cooperate')">cooperate</div>
 </td>
 <td>
 	<audio src='incident.mp3' id='incident'>
 	</audio>
-	<div id='incident_text' onClick="document.getElementById('incident').play();">incident</div>
+	<div id='incident_text' onClick="playword('incident')">incident</div>
 </td>
 <td>
 	<audio src='precise.mp3' id='precise'>
 	</audio>
-	<div id='precise_text' onClick="document.getElementById('precise').play();">precise</div>
+	<div id='precise_text' onClick="playword('precise')">precise</div>
 </td>
 <td>
 	<audio src='target.mp3' id='target'>
 	</audio>
-	<div id='target_text' onClick="document.getElementById('target').play();">target</div>
+	<div id='target_text' onClick="playword('target')">target</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='adjust.mp3' id='adjust'>
 	</audio>
-	<div id='adjust_text' onClick="document.getElementById('adjust').play();">adjust</div>
+	<div id='adjust_text' onClick="playword('adjust')">adjust</div>
 </td>
 <td>
 	<audio src='coordinate.mp3' id='coordinate'>
 	</audio>
-	<div id='coordinate_text' onClick="document.getElementById('coordinate').play();">coordinate</div>
+	<div id='coordinate_text' onClick="playword('coordinate')">coordinate</div>
 </td>
 <td>
 	<audio src='influence.mp3' id='influence'>
 	</audio>
-	<div id='influence_text' onClick="document.getElementById('influence').play();">influence</div>
+	<div id='influence_text' onClick="playword('influence')">influence</div>
 </td>
 <td>
 	<audio src='previous.mp3' id='previous'>
 	</audio>
-	<div id='previous_text' onClick="document.getElementById('previous').play();">previous</div>
+	<div id='previous_text' onClick="playword('previous')">previous</div>
 </td>
 <td>
 	<audio src='technique.mp3' id='technique'>
 	</audio>
-	<div id='technique_text' onClick="document.getElementById('technique').play();">technique</div>
+	<div id='technique_text' onClick="playword('technique')">technique</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='analysis.mp3' id='analysis'>
 	</audio>
-	<div id='analysis_text' onClick="document.getElementById('analysis').play();">analysis</div>
+	<div id='analysis_text' onClick="playword('analysis')">analysis</div>
 </td>
 <td>
 	<audio src='data.mp3' id='data'>
 	</audio>
-	<div id='data_text' onClick="document.getElementById('data').play();">data</div>
+	<div id='data_text' onClick="playword('data')">data</div>
 </td>
 <td>
 	<audio src='information.mp3' id='information'>
 	</audio>
-	<div id='information_text' onClick="document.getElementById('information').play();">information</div>
+	<div id='information_text' onClick="playword('information')">information</div>
 </td>
 <td>
 	<audio src='primary.mp3' id='primary'>
 	</audio>
-	<div id='primary_text' onClick="document.getElementById('primary').play();">primary</div>
+	<div id='primary_text' onClick="playword('primary')">primary</div>
 </td>
 <td>
 	<audio src='technology.mp3' id='technology'>
 	</audio>
-	<div id='technology_text' onClick="document.getElementById('technology').play();">technology</div>
+	<div id='technology_text' onClick="playword('technology')">technology</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='analyze.mp3' id='analyze'>
 	</audio>
-	<div id='analyze_text' onClick="document.getElementById('analyze').play();">analyze</div>
+	<div id='analyze_text' onClick="playword('analyze')">analyze</div>
 </td>
 <td>
 	<audio src='debate.mp3' id='debate'>
 	</audio>
-	<div id='debate_text' onClick="document.getElementById('debate').play();">debate</div>
+	<div id='debate_text' onClick="playword('debate')">debate</div>
 </td>
 <td>
 	<audio src='injure.mp3' id='injure'>
 	</audio>
-	<div id='injure_text' onClick="document.getElementById('injure').play();">injure</div>
+	<div id='injure_text' onClick="playword('injure')">injure</div>
 </td>
 <td>
 	<audio src='prior.mp3' id='prior'>
 	</audio>
-	<div id='prior_text' onClick="document.getElementById('prior').play();">prior</div>
+	<div id='prior_text' onClick="playword('prior')">prior</div>
 </td>
 <td>
 	<audio src='temporary.mp3' id='temporary'>
 	</audio>
-	<div id='temporary_text' onClick="document.getElementById('temporary').play();">temporary</div>
+	<div id='temporary_text' onClick="playword('temporary')">temporary</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='annual.mp3' id='annual'>
 	</audio>
-	<div id='annual_text' onClick="document.getElementById('annual').play();">annual</div>
+	<div id='annual_text' onClick="playword('annual')">annual</div>
 </td>
 <td>
 	<audio src='design.mp3' id='design'>
 	</audio>
-	<div id='design_text' onClick="document.getElementById('design').play();">design</div>
+	<div id='design_text' onClick="playword('design')">design</div>
 </td>
 <td>
 	<audio src='inspect.mp3' id='inspect'>
 	</audio>
-	<div id='inspect_text' onClick="document.getElementById('inspect').play();">inspect</div>
+	<div id='inspect_text' onClick="playword('inspect')">inspect</div>
 </td>
 <td>
 	<audio src='pursue.mp3' id='pursue'>
 	</audio>
-	<div id='pursue_text' onClick="document.getElementById('pursue').play();">pursue</div>
+	<div id='pursue_text' onClick="playword('pursue')">pursue</div>
 </td>
 <td>
 	<audio src='theory.mp3' id='theory'>
 	</audio>
-	<div id='theory_text' onClick="document.getElementById('theory').play();">theory</div>
+	<div id='theory_text' onClick="playword('theory')">theory</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='appreciate.mp3' id='appreciate'>
 	</audio>
-	<div id='appreciate_text' onClick="document.getElementById('appreciate').play();">appreciate</div>
+	<div id='appreciate_text' onClick="playword('appreciate')">appreciate</div>
 </td>
 <td>
 	<audio src='despite.mp3' id='despite'>
 	</audio>
-	<div id='despite_text' onClick="document.getElementById('despite').play();">despite</div>
+	<div id='despite_text' onClick="playword('despite')">despite</div>
 </td>
 <td>
 	<audio src='instance.mp3' id='instance'>
 	</audio>
-	<div id='instance_text' onClick="document.getElementById('instance').play();">instance</div>
+	<div id='instance_text' onClick="playword('instance')">instance</div>
 </td>
 <td>
 	<audio src='quote.mp3' id='quote'>
 	</audio>
-	<div id='quote_text' onClick="document.getElementById('quote').play();">quote</div>
+	<div id='quote_text' onClick="playword('quote')">quote</div>
 </td>
 <td>
 	<audio src='topic.mp3' id='topic'>
 	</audio>
-	<div id='topic_text' onClick="document.getElementById('topic').play();">topic</div>
+	<div id='topic_text' onClick="playword('topic')">topic</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='approximate.mp3' id='approximate'>
 	</audio>
-	<div id='approximate_text' onClick="document.getElementById('approximate').play();">approximate</div>
+	<div id='approximate_text' onClick="playword('approximate')">approximate</div>
 </td>
 <td>
 	<audio src='determine.mp3' id='determine'>
 	</audio>
-	<div id='determine_text' onClick="document.getElementById('determine').play();">determine</div>
+	<div id='determine_text' onClick="playword('determine')">determine</div>
 </td>
 <td>
 	<audio src='interact.mp3' id='interact'>
 	</audio>
-	<div id='interact_text' onClick="document.getElementById('interact').play();">interact</div>
+	<div id='interact_text' onClick="playword('interact')">interact</div>
 </td>
 <td>
 	<audio src='react.mp3' id='react'>
 	</audio>
-	<div id='react_text' onClick="document.getElementById('react').play();">react</div>
+	<div id='react_text' onClick="playword('react')">react</div>
 </td>
 <td>
 	<audio src='tradition.mp3' id='tradition'>
 	</audio>
-	<div id='tradition_text' onClick="document.getElementById('tradition').play();">tradition</div>
+	<div id='tradition_text' onClick="playword('tradition')">tradition</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='aspect.mp3' id='aspect'>
 	</audio>
-	<div id='aspect_text' onClick="document.getElementById('aspect').play();">aspect</div>
+	<div id='aspect_text' onClick="playword('aspect')">aspect</div>
 </td>
 <td>
 	<audio src='difficult.mp3' id='difficult'>
 	</audio>
-	<div id='difficult_text' onClick="document.getElementById('difficult').play();">difficult</div>
+	<div id='difficult_text' onClick="playword('difficult')">difficult</div>
 </td>
 <td>
 	<audio src='interpret.mp3' id='interpret'>
 	</audio>
-	<div id='interpret_text' onClick="document.getElementById('interpret').play();">interpret</div>
+	<div id='interpret_text' onClick="playword('interpret')">interpret</div>
 </td>
 <td>
 	<audio src='reaction.mp3' id='reaction'>
 	</audio>
-	<div id='reaction_text' onClick="document.getElementById('reaction').play();">reaction</div>
+	<div id='reaction_text' onClick="playword('reaction')">reaction</div>
 </td>
 <td>
 	<audio src='transfer.mp3' id='transfer'>
 	</audio>
-	<div id='transfer_text' onClick="document.getElementById('transfer').play();">transfer</div>
+	<div id='transfer_text' onClick="playword('transfer')">transfer</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='assess.mp3' id='assess'>
 	</audio>
-	<div id='assess_text' onClick="document.getElementById('assess').play();">assess</div>
+	<div id='assess_text' onClick="playword('assess')">assess</div>
 </td>
 <td>
 	<audio src='discuss.mp3' id='discuss'>
 	</audio>
-	<div id='discuss_text' onClick="document.getElementById('discuss').play();">discuss</div>
+	<div id='discuss_text' onClick="playword('discuss')">discuss</div>
 </td>
 <td>
 	<audio src='interpretation.mp3' id='interpretation'>
 	</audio>
-	<div id='interpretation_text' onClick="document.getElementById('interpretation').play();">interpretation</div>
+	<div id='interpretation_text' onClick="playword('interpretation')">interpretation</div>
 </td>
 <td>
 	<audio src='regulate.mp3' id='regulate'>
 	</audio>
-	<div id='regulate_text' onClick="document.getElementById('regulate').play();">regulate</div>
+	<div id='regulate_text' onClick="playword('regulate')">regulate</div>
 </td>
 <td>
 	<audio src='transform.mp3' id='transform'>
 	</audio>
-	<div id='transform_text' onClick="document.getElementById('transform').play();">transform</div>
+	<div id='transform_text' onClick="playword('transform')">transform</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='assessment.mp3' id='assessment'>
 	</audio>
-	<div id='assessment_text' onClick="document.getElementById('assessment').play();">assessment</div>
+	<div id='assessment_text' onClick="playword('assessment')">assessment</div>
 </td>
 <td>
 	<audio src='document.mp3' id='document'>
 	</audio>
-	<div id='document_text' onClick="document.getElementById('document').play();">document</div>
+	<div id='document_text' onClick="playword('document')">document</div>
 </td>
 <td>
 	<audio src='item.mp3' id='item'>
 	</audio>
-	<div id='item_text' onClick="document.getElementById('item').play();">item</div>
+	<div id='item_text' onClick="playword('item')">item</div>
 </td>
 <td>
 	<audio src='reject.mp3' id='reject'>
 	</audio>
-	<div id='reject_text' onClick="document.getElementById('reject').play();">reject</div>
+	<div id='reject_text' onClick="playword('reject')">reject</div>
 </td>
 <td>
 	<audio src='transport.mp3' id='transport'>
 	</audio>
-	<div id='transport_text' onClick="document.getElementById('transport').play();">transport</div>
+	<div id='transport_text' onClick="playword('transport')">transport</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='assign.mp3' id='assign'>
 	</audio>
-	<div id='assign_text' onClick="document.getElementById('assign').play();">assign</div>
+	<div id='assign_text' onClick="playword('assign')">assign</div>
 </td>
 <td>
 	<audio src='dynamic.mp3' id='dynamic'>
 	</audio>
-	<div id='dynamic_text' onClick="document.getElementById('dynamic').play();">dynamic</div>
+	<div id='dynamic_text' onClick="playword('dynamic')">dynamic</div>
 </td>
 <td>
 	<audio src='justify.mp3' id='justify'>
 	</audio>
-	<div id='justify_text' onClick="document.getElementById('justify').play();">justify</div>
+	<div id='justify_text' onClick="playword('justify')">justify</div>
 </td>
 <td>
 	<audio src='release.mp3' id='release'>
 	</audio>
-	<div id='release_text' onClick="document.getElementById('release').play();">release</div>
+	<div id='release_text' onClick="playword('release')">release</div>
 </td>
 <td>
 	<audio src='unite.mp3' id='unite'>
 	</audio>
-	<div id='unite_text' onClick="document.getElementById('unite').play();">unite</div>
+	<div id='unite_text' onClick="playword('unite')">unite</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='assume.mp3' id='assume'>
 	</audio>
-	<div id='assume_text' onClick="document.getElementById('assume').play();">assume</div>
+	<div id='assume_text' onClick="playword('assume')">assume</div>
 </td>
 <td>
 	<audio src='emerge.mp3' id='emerge'>
 	</audio>
-	<div id='emerge_text' onClick="document.getElementById('emerge').play();">emerge</div>
+	<div id='emerge_text' onClick="playword('emerge')">emerge</div>
 </td>
 <td>
 	<audio src='legal.mp3' id='legal'>
 	</audio>
-	<div id='legal_text' onClick="document.getElementById('legal').play();">legal</div>
+	<div id='legal_text' onClick="playword('legal')">legal</div>
 </td>
 <td>
 	<audio src='rely.mp3' id='rely'>
 	</audio>
-	<div id='rely_text' onClick="document.getElementById('rely').play();">rely</div>
+	<div id='rely_text' onClick="playword('rely')">rely</div>
 </td>
 <td>
 	<audio src='valid.mp3' id='valid'>
 	</audio>
-	<div id='valid_text' onClick="document.getElementById('valid').play();">valid</div>
+	<div id='valid_text' onClick="playword('valid')">valid</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='attach.mp3' id='attach'>
 	</audio>
-	<div id='attach_text' onClick="document.getElementById('attach').play();">attach</div>
+	<div id='attach_text' onClick="playword('attach')">attach</div>
 </td>
 <td>
 	<audio src='emphasis.mp3' id='emphasis'>
 	</audio>
-	<div id='emphasis_text' onClick="document.getElementById('emphasis').play();">emphasis</div>
+	<div id='emphasis_text' onClick="playword('emphasis')">emphasis</div>
 </td>
 <td>
 	<audio src='license.mp3' id='license'>
 	</audio>
-	<div id='license_text' onClick="document.getElementById('license').play();">license</div>
+	<div id='license_text' onClick="playword('license')">license</div>
 </td>
 <td>
 	<audio src='research.mp3' id='research'>
 	</audio>
-	<div id='research_text' onClick="document.getElementById('research').play();">research</div>
+	<div id='research_text' onClick="playword('research')">research</div>
 </td>
 <td>
 	<audio src='variable.mp3' id='variable'>
 	</audio>
-	<div id='variable_text' onClick="document.getElementById('variable').play();">variable</div>
+	<div id='variable_text' onClick="playword('variable')">variable</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='awhile.mp3' id='awhile'>
 	</audio>
-	<div id='awhile_text' onClick="document.getElementById('awhile').play();">awhile</div>
+	<div id='awhile_text' onClick="playword('awhile')">awhile</div>
 </td>
 <td>
 	<audio src='estimate.mp3' id='estimate'>
 	</audio>
-	<div id='estimate_text' onClick="document.getElementById('estimate').play();">estimate</div>
+	<div id='estimate_text' onClick="playword('estimate')">estimate</div>
 </td>
 <td>
 	<audio src='link.mp3' id='link'>
 	</audio>
-	<div id='link_text' onClick="document.getElementById('link').play();">link</div>
+	<div id='link_text' onClick="playword('link')">link</div>
 </td>
 <td>
 	<audio src='reside.mp3' id='reside'>
 	</audio>
-	<div id='reside_text' onClick="document.getElementById('reside').play();">reside</div>
+	<div id='reside_text' onClick="playword('reside')">reside</div>
 </td>
 <td>
 	<audio src='variety.mp3' id='variety'>
 	</audio>
-	<div id='variety_text' onClick="document.getElementById('variety').play();">variety</div>
+	<div id='variety_text' onClick="playword('variety')">variety</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='classic.mp3' id='classic'>
 	</audio>
-	<div id='classic_text' onClick="document.getElementById('classic').play();">classic</div>
+	<div id='classic_text' onClick="playword('classic')">classic</div>
 </td>
 <td>
 	<audio src='evaluate.mp3' id='evaluate'>
 	</audio>
-	<div id='evaluate_text' onClick="document.getElementById('evaluate').play();">evaluate</div>
+	<div id='evaluate_text' onClick="playword('evaluate')">evaluate</div>
 </td>
 <td>
 	<audio src='manipulate.mp3' id='manipulate'>
 	</audio>
-	<div id='manipulate_text' onClick="document.getElementById('manipulate').play();">manipulate</div>
+	<div id='manipulate_text' onClick="playword('manipulate')">manipulate</div>
 </td>
 <td>
 	<audio src='resolve.mp3' id='resolve'>
 	</audio>
-	<div id='resolve_text' onClick="document.getElementById('resolve').play();">resolve</div>
+	<div id='resolve_text' onClick="playword('resolve')">resolve</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='coincide.mp3' id='coincide'>
 	</audio>
-	<div id='coincide_text' onClick="document.getElementById('coincide').play();">coincide</div>
+	<div id='coincide_text' onClick="playword('coincide')">coincide</div>
 </td>
 <td>
 	<audio src='evidence.mp3' id='evidence'>
 	</audio>
-	<div id='evidence_text' onClick="document.getElementById('evidence').play();">evidence</div>
+	<div id='evidence_text' onClick="playword('evidence')">evidence</div>
 </td>
 <td>
 	<audio src='mature.mp3' id='mature'>
 	</audio>
-	<div id='mature_text' onClick="document.getElementById('mature').play();">mature</div>
+	<div id='mature_text' onClick="playword('mature')">mature</div>
 </td>
 <td>
 	<audio src='resource.mp3' id='resource'>
 	</audio>
-	<div id='resource_text' onClick="document.getElementById('resource').play();">resource</div>
+	<div id='resource_text' onClick="playword('resource')">resource</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='comment.mp3' id='comment'>
 	</audio>
-	<div id='comment_text' onClick="document.getElementById('comment').play();">comment</div>
+	<div id='comment_text' onClick="playword('comment')">comment</div>
 </td>
 <td>
 	<audio src='examine.mp3' id='examine'>
 	</audio>
-	<div id='examine_text' onClick="document.getElementById('examine').play();">examine</div>
+	<div id='examine_text' onClick="playword('examine')">examine</div>
 </td>
 <td>
 	<audio src='medium.mp3' id='medium'>
 	</audio>
-	<div id='medium_text' onClick="document.getElementById('medium').play();">medium</div>
+	<div id='medium_text' onClick="playword('medium')">medium</div>
 </td>
 <td>
 	<audio src='response.mp3' id='response'>
 	</audio>
-	<div id='response_text' onClick="document.getElementById('response').play();">response</div>
+	<div id='response_text' onClick="playword('response')">response</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='communicate.mp3' id='communicate'>
 	</audio>
-	<div id='communicate_text' onClick="document.getElementById('communicate').play();">communicate</div>
+	<div id='communicate_text' onClick="playword('communicate')">communicate</div>
 </td>
 <td>
 	<audio src='expand.mp3' id='expand'>
 	</audio>
-	<div id='expand_text' onClick="document.getElementById('expand').play();">expand</div>
+	<div id='expand_text' onClick="playword('expand')">expand</div>
 </td>
 <td>
 	<audio src='mention.mp3' id='mention'>
 	</audio>
-	<div id='mention_text' onClick="document.getElementById('mention').play();">mention</div>
+	<div id='mention_text' onClick="playword('mention')">mention</div>
 </td>
 <td>
 	<audio src='retain.mp3' id='retain'>
 	</audio>
-	<div id='retain_text' onClick="document.getElementById('retain').play();">retain</div>
+	<div id='retain_text' onClick="playword('retain')">retain</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='compile.mp3' id='compile'>
 	</audio>
-	<div id='compile_text' onClick="document.getElementById('compile').play();">compile</div>
+	<div id='compile_text' onClick="playword('compile')">compile</div>
 </td>
 <td>
 	<audio src='expert.mp3' id='expert'>
 	</audio>
-	<div id='expert_text' onClick="document.getElementById('expert').play();">expert</div>
+	<div id='expert_text' onClick="playword('expert')">expert</div>
 </td>
 <td>
 	<audio src='minor.mp3' id='minor'>
 	</audio>
-	<div id='minor_text' onClick="document.getElementById('minor').play();">minor</div>
+	<div id='minor_text' onClick="playword('minor')">minor</div>
 </td>
 <td>
 	<audio src='revise.mp3' id='revise'>
 	</audio>
-	<div id='revise_text' onClick="document.getElementById('revise').play();">revise</div>
+	<div id='revise_text' onClick="playword('revise')">revise</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='complement.mp3' id='complement'>
 	</audio>
-	<div id='complement_text' onClick="document.getElementById('complement').play();">complement</div>
+	<div id='complement_text' onClick="playword('complement')">complement</div>
 </td>
 <td>
 	<audio src='factor.mp3' id='factor'>
 	</audio>
-	<div id='factor_text' onClick="document.getElementById('factor').play();">factor</div>
+	<div id='factor_text' onClick="playword('factor')">factor</div>
 </td>
 <td>
 	<audio src='modify.mp3' id='modify'>
 	</audio>
-	<div id='modify_text' onClick="document.getElementById('modify').play();">modify</div>
+	<div id='modify_text' onClick="playword('modify')">modify</div>
 </td>
 <td>
 	<audio src='scheme.mp3' id='scheme'>
 	</audio>
-	<div id='scheme_text' onClick="document.getElementById('scheme').play();">scheme</div>
+	<div id='scheme_text' onClick="playword('scheme')">scheme</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='compliment.mp3' id='compliment'>
 	</audio>
-	<div id='compliment_text' onClick="document.getElementById('compliment').play();">compliment</div>
+	<div id='compliment_text' onClick="playword('compliment')">compliment</div>
 </td>
 <td>
 	<audio src='focus.mp3' id='focus'>
 	</audio>
-	<div id='focus_text' onClick="document.getElementById('focus').play();">focus</div>
+	<div id='focus_text' onClick="playword('focus')">focus</div>
 </td>
 <td>
 	<audio src='normal.mp3' id='normal'>
 	</audio>
-	<div id='normal_text' onClick="document.getElementById('normal').play();">normal</div>
+	<div id='normal_text' onClick="playword('normal')">normal</div>
 </td>
 <td>
 	<audio src='sequence.mp3' id='sequence'>
 	</audio>
-	<div id='sequence_text' onClick="document.getElementById('sequence').play();">sequence</div>
+	<div id='sequence_text' onClick="playword('sequence')">sequence</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='comprehend.mp3' id='comprehend'>
 	</audio>
-	<div id='comprehend_text' onClick="document.getElementById('comprehend').play();">comprehend</div>
+	<div id='comprehend_text' onClick="playword('comprehend')">comprehend</div>
 </td>
 <td>
 	<audio src='format.mp3' id='format'>
 	</audio>
-	<div id='format_text' onClick="document.getElementById('format').play();">format</div>
+	<div id='format_text' onClick="playword('format')">format</div>
 </td>
 <td>
 	<audio src='obtain.mp3' id='obtain'>
 	</audio>
-	<div id='obtain_text' onClick="document.getElementById('obtain').play();">obtain</div>
+	<div id='obtain_text' onClick="playword('obtain')">obtain</div>
 </td>
 <td>
 	<audio src='solution.mp3' id='solution'>
 	</audio>
-	<div id='solution_text' onClick="document.getElementById('solution').play();">solution</div>
+	<div id='solution_text' onClick="playword('solution')">solution</div>
 </td>
 </tr>
 <tr>
 <td>
 	<audio src='concentrate.mp3' id='concentrate'>
 	</audio>
-	<div id='concentrate_text' onClick="document.getElementById('concentrate').play();">concentrate</div>
+	<div id='concentrate_text' onClick="playword('concentrate')">concentrate</div>
 </td>
 <td>
 	<audio src='foundation.mp3' id='foundation'>
 	</audio>
-	<div id='foundation_text' onClick="document.getElementById('foundation').play();">foundation</div>
+	<div id='foundation_text' onClick="playword('foundation')">foundation</div>
 </td>
 <td>
 	<audio src='offset.mp3' id='offset'>
 	</audio>
-	<div id='offset_text' onClick="document.getElementById('offset').play();">offset</div>
+	<div id='offset_text' onClick="playword('offset')">offset</div>
 </td>
 <td>
 	<audio src='specific.mp3' id='specific'>
 	</audio>
-	<div id='specific_text' onClick="document.getElementById('specific').play();">specific</div>
+	<div id='specific_text' onClick="playword('specific')">specific</div>
 </td>
 </tr>
 </table>
