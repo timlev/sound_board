@@ -1,4 +1,4 @@
-import csv, os, download_dict_sound, sys
+import csv, os, download_wiktionary_word, sys
 
 datafile = ""
 
@@ -6,7 +6,7 @@ datafile = ""
 if len(sys.argv) > 1:
     datafile = sys.argv[1]
 else:
-    datafile = "5th grade academic vocabulary.csv"
+    datafile = "Primer.csv"
 
 rawdata = []
 if datafile.endswith(".txt"):
@@ -84,9 +84,19 @@ for row in data:
 not_downloaded = []
 
 for word in toDownload:
-    #print word
-    if download_dict_sound.download(word, os.path.relpath(title)) != 0:
+    download_wiktionary_word.get_wiki(word, title)
+    #download_gstatic(word)
+    try:
+        download_wiktionary_word.convert_ogg_to_mp3(os.path.join(title,word + ".ogg"), True)
+    except:
+        print "************\n Problem with " + word + "\n******************\n"
         not_downloaded.append(word)
+
+
+
+    #print word
+    #if download_dict_sound.download(word, os.path.relpath(title)) != 0:
+        #not_downloaded.append(word)
 print "Not downloaded:\n"
 print not_downloaded
 
