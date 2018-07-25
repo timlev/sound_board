@@ -1,6 +1,6 @@
 import csv, itertools
 
-txtfilename = "5th grade academic vocabulary.txt"
+txtfilename = "Pre-Primer.txt"
 csvfilename = txtfilename[:txtfilename.rindex(".")] + ".csv"
 rawdata = []
 
