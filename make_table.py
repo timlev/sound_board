@@ -6,7 +6,7 @@ datafile = ""
 if len(sys.argv) > 1:
     datafile = sys.argv[1]
 else:
-    datafile = "Primer.csv"
+    datafile = "1st Grade.csv"
 
 rawdata = []
 if datafile.endswith(".txt"):

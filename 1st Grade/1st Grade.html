@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>1st Grade</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.23.1" />
+	<link rel="stylesheet" type="text/css" href='../css_file.css'>
+	<script>
+		function onpreload(obj){
+			console.log("Preloaded: " + obj.id);
+		};
+		function revert_color(obj){
+			setTimeout(function (){document.getElementById(obj.id).style.backgroundColor = 'transparent';},1000);
+		};
+		function play(sndobj){
+			txtobjId = sndobj.id + "_text";
+			txtobj = document.getElementById(txtobjId);
+			document.getElementById(txtobj.id).style.backgroundColor = 'yellow';
+			document.getElementById(sndobj.id).play();
+			document.getElementById(sndobj.id).addEventListener( "ended", revert_color(txtobj));
+		};
+	</script>
+</head>
+
+<body>
+<div><img align="left" src="../click.png" width="75" height="75"></img><h2>Click to listen to the words.</h2></div>
+<div><table border=1>
+<tr>
+<td>
+	<audio src='after.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='after'> 
+	</audio>
+	<div id='after_text' onClick="play(document.getElementById('after'));">after</div>
+</td>
+<td>
+	<audio src='again.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='again'> 
+	</audio>
+	<div id='again_text' onClick="play(document.getElementById('again'));">again</div>
+</td>
+<td>
+	<audio src='an.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='an'> 
+	</audio>
+	<div id='an_text' onClick="play(document.getElementById('an'));">an</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='any.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='any'> 
+	</audio>
+	<div id='any_text' onClick="play(document.getElementById('any'));">any</div>
+</td>
+<td>
+	<audio src='as.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='as'> 
+	</audio>
+	<div id='as_text' onClick="play(document.getElementById('as'));">as</div>
+</td>
+<td>
+	<audio src='ask.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='ask'> 
+	</audio>
+	<div id='ask_text' onClick="play(document.getElementById('ask'));">ask</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='by.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='by'> 
+	</audio>
+	<div id='by_text' onClick="play(document.getElementById('by'));">by</div>
+</td>
+<td>
+	<audio src='could.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='could'> 
+	</audio>
+	<div id='could_text' onClick="play(document.getElementById('could'));">could</div>
+</td>
+<td>
+	<audio src='every.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='every'> 
+	</audio>
+	<div id='every_text' onClick="play(document.getElementById('every'));">every</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='fly.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='fly'> 
+	</audio>
+	<div id='fly_text' onClick="play(document.getElementById('fly'));">fly</div>
+</td>
+<td>
+	<audio src='from.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='from'> 
+	</audio>
+	<div id='from_text' onClick="play(document.getElementById('from'));">from</div>
+</td>
+<td>
+	<audio src='give.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='give'> 
+	</audio>
+	<div id='give_text' onClick="play(document.getElementById('give'));">give</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='going.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='going'> 
+	</audio>
+	<div id='going_text' onClick="play(document.getElementById('going'));">going</div>
+</td>
+<td>
+	<audio src='had.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='had'> 
+	</audio>
+	<div id='had_text' onClick="play(document.getElementById('had'));">had</div>
+</td>
+<td>
+	<audio src='has.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='has'> 
+	</audio>
+	<div id='has_text' onClick="play(document.getElementById('has'));">has</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='her.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='her'> 
+	</audio>
+	<div id='her_text' onClick="play(document.getElementById('her'));">her</div>
+</td>
+<td>
+	<audio src='him.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='him'> 
+	</audio>
+	<div id='him_text' onClick="play(document.getElementById('him'));">him</div>
+</td>
+<td>
+	<audio src='how.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='how'> 
+	</audio>
+	<div id='how_text' onClick="play(document.getElementById('how'));">how</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='just.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='just'> 
+	</audio>
+	<div id='just_text' onClick="play(document.getElementById('just'));">just</div>
+</td>
+<td>
+	<audio src='know.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='know'> 
+	</audio>
+	<div id='know_text' onClick="play(document.getElementById('know'));">know</div>
+</td>
+<td>
+	<audio src='let.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='let'> 
+	</audio>
+	<div id='let_text' onClick="play(document.getElementById('let'));">let</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='live.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='live'> 
+	</audio>
+	<div id='live_text' onClick="play(document.getElementById('live'));">live</div>
+</td>
+<td>
+	<audio src='may.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='may'> 
+	</audio>
+	<div id='may_text' onClick="play(document.getElementById('may'));">may</div>
+</td>
+<td>
+	<audio src='of.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='of'> 
+	</audio>
+	<div id='of_text' onClick="play(document.getElementById('of'));">of</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='old.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='old'> 
+	</audio>
+	<div id='old_text' onClick="play(document.getElementById('old'));">old</div>
+</td>
+<td>
+	<audio src='once.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='once'> 
+	</audio>
+	<div id='once_text' onClick="play(document.getElementById('once'));">once</div>
+</td>
+<td>
+	<audio src='open.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='open'> 
+	</audio>
+	<div id='open_text' onClick="play(document.getElementById('open'));">open</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='over.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='over'> 
+	</audio>
+	<div id='over_text' onClick="play(document.getElementById('over'));">over</div>
+</td>
+<td>
+	<audio src='put.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='put'> 
+	</audio>
+	<div id='put_text' onClick="play(document.getElementById('put'));">put</div>
+</td>
+<td>
+	<audio src='round.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='round'> 
+	</audio>
+	<div id='round_text' onClick="play(document.getElementById('round'));">round</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='some.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='some'> 
+	</audio>
+	<div id='some_text' onClick="play(document.getElementById('some'));">some</div>
+</td>
+<td>
+	<audio src='stop.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='stop'> 
+	</audio>
+	<div id='stop_text' onClick="play(document.getElementById('stop'));">stop</div>
+</td>
+<td>
+	<audio src='take.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='take'> 
+	</audio>
+	<div id='take_text' onClick="play(document.getElementById('take'));">take</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='thank.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='thank'> 
+	</audio>
+	<div id='thank_text' onClick="play(document.getElementById('thank'));">thank</div>
+</td>
+<td>
+	<audio src='them.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='them'> 
+	</audio>
+	<div id='them_text' onClick="play(document.getElementById('them'));">them</div>
+</td>
+<td>
+	<audio src='then.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='then'> 
+	</audio>
+	<div id='then_text' onClick="play(document.getElementById('then'));">then</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='think.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='think'> 
+	</audio>
+	<div id='think_text' onClick="play(document.getElementById('think'));">think</div>
+</td>
+<td>
+	<audio src='walk.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='walk'> 
+	</audio>
+	<div id='walk_text' onClick="play(document.getElementById('walk'));">walk</div>
+</td>
+<td>
+	<audio src='where.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='where'> 
+	</audio>
+	<div id='where_text' onClick="play(document.getElementById('where'));">where</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='when.mp3'  preload='auto' oncanplaythrough='onpreload(this)' id='when'> 
+	</audio>
+	<div id='when_text' onClick="play(document.getElementById('when'));">when</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+
+</html>
