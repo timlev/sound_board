@@ -17,16 +17,16 @@ rawdata.sort()
 output_list = []
 full_cols = len(rawdata) / 27
 remainder_rows = len(rawdata) % 27
-print len(rawdata[0:27])
+print (len(rawdata[0:27]))
 cursor = 0
-for col in range(1,full_cols + 1):
+for col in range(1,int(full_cols) + 1):
     output_list.append(rawdata[cursor: col * 27])
     cursor = col * 27
 output_list.append(rawdata[cursor:])
 
-output_list = itertools.izip_longest(*output_list)
-
-with open(csvfilename, "wb") as csvfile:
+output_list = itertools.zip_longest(*output_list)
+print (output_list)
+with open(csvfilename, "w") as csvfile:
     csvwriter = csv.writer(csvfile)
     for row in output_list:
         csvwriter.writerow(row)
