@@ -59,11 +59,11 @@ htmlblob += "<table border=1>\n"
 for row in data:
     htmlblob += "<tr>\n"
     for item in [x for x in row if x != ""]:
-		htmlblob += "<td>\n"
-		htmlblob += """\t<audio src='""" + item + """.mp3' id='"""+ item + """'> \n"""
-		htmlblob += """\t</audio>\n"""
-		htmlblob += """\t<div id='""" + item + """_text' onClick="play(document.getElementById('""" + item + """'));">""" + item + """</div>\n"""
-		htmlblob += "</td>\n"
+        htmlblob += "<td>\n"
+        htmlblob += """\t<audio src='""" + item + """.mp3' id='"""+ item + """'> \n"""
+        htmlblob += """\t</audio>\n"""
+        htmlblob += """\t<div id='""" + item + """_text' onClick="play(document.getElementById('""" + item + """'));">""" + item + """</div>\n"""
+        htmlblob += "</td>\n"
     htmlblob += "</tr>\n"
 
 htmlblob += "</table>\n"
@@ -89,7 +89,7 @@ for word in toDownload:
     try:
         download_wiktionary_word.convert_ogg_to_mp3(os.path.join(title,word + ".ogg"), True)
     except:
-        print "************\n Problem with " + word + "\n******************\n"
+        print("************\n Problem with " + word + "\n******************\n")
         not_downloaded.append(word)
 
 
@@ -97,8 +97,8 @@ for word in toDownload:
     #print word
     #if download_dict_sound.download(word, os.path.relpath(title)) != 0:
         #not_downloaded.append(word)
-print "Not downloaded:\n"
-print not_downloaded
+print("Not downloaded:\n")
+print(not_downloaded)
 
 #WRITE FILE WITH LIST OF NOT DOWNLOADED
 with open(os.path.join(title, "not_downloaded.txt"),"w") as fp:

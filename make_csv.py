@@ -1,6 +1,6 @@
 import csv, itertools
 
-txtfilename = "Pre-Primer.txt"
+txtfilename = "Primer.txt"
 csvfilename = txtfilename[:txtfilename.rindex(".")] + ".csv"
 rawdata = []
 
