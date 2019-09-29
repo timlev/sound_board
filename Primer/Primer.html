@@ -1,24 +1,24 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-	<title>Primer</title>
-	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-	<meta name="generator" content="Geany 1.23.1" />
-	<link rel="stylesheet" type="text/css" href='../css_file.css'>
-	<script>
-		function revert_color(obj){
-			setTimeout(function (){document.getElementById(obj.id).style.backgroundColor = 'transparent';},1000);
-		};
-		function play(sndobj){
-			txtobjId = sndobj.id + "_text";
-			txtobj = document.getElementById(txtobjId);
-			document.getElementById(txtobj.id).style.backgroundColor = 'yellow';
-			document.getElementById(sndobj.id).play();
-			document.getElementById(sndobj.id).addEventListener( "ended", revert_color(txtobj));
-		};
-	</script>
+    <title>Primer</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="generator" content="Geany 1.23.1" />
+    <link rel="stylesheet" type="text/css" href='../css_file.css'>
+    <script>
+        function revert_color(obj){
+            setTimeout(function (){document.getElementById(obj.id).style.backgroundColor = 'transparent';},1000);
+        };
+        function play(sndobj){
+            txtobjId = sndobj.id + "_text";
+            txtobj = document.getElementById(txtobjId);
+            document.getElementById(txtobj.id).style.backgroundColor = 'yellow';
+            document.getElementById(sndobj.id).play();
+            document.getElementById(sndobj.id).addEventListener( "ended", revert_color(txtobj));
+        };
+    </script>
 </head>
 
 <body>

@@ -35,7 +35,11 @@ def get_wiki(word, directory="./"):
     #print(index.find(title=filenameguess))
     #Jump to file wiktionary page
     query = base + filenameguess
-    response = urllib.request.urlopen(query)
+    try:
+        response = urllib.request.urlopen(query)
+    except:
+        print("HTTP error for " + query)
+        return 2
     print(response)
     index = bs4.BeautifulSoup(response, "html5lib")
     links = index.find_all("a")

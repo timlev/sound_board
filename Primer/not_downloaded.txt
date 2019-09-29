@@ -1,0 +1,9 @@
+all
+am
+are
+at
+ate
+be
+black
+did
+do
