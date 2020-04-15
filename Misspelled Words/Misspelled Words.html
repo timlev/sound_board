@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Misspelled Words</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="generator" content="Geany 1.23.1" />
+    <link rel="stylesheet" type="text/css" href='../css_file.css'>
+    <script>
+        function revert_color(obj){
+            setTimeout(function (){document.getElementById(obj.id).style.backgroundColor = 'transparent';},1000);
+        };
+        function play(sndobj){
+            txtobjId = sndobj.id + "_text";
+            txtobj = document.getElementById(txtobjId);
+            document.getElementById(txtobj.id).style.backgroundColor = 'yellow';
+            document.getElementById(sndobj.id).play();
+            document.getElementById(sndobj.id).addEventListener( "ended", revert_color(txtobj));
+        };
+    </script>
+</head>
+
+<body>
+<div><img align="left" src="../click.png" width="75" height="75"></img><h2>Click to listen to the words.</h2></div>
+<div><table border=1>
+<tr>
+<td>
+	<audio src='too.mp3' id='too'> 
+	</audio>
+	<div id='too_text' onClick="play(document.getElementById('too'));">too</div>
+</td>
+<td>
+	<audio src='until.mp3' id='until'> 
+	</audio>
+	<div id='until_text' onClick="play(document.getElementById('until'));">until</div>
+</td>
+<td>
+	<audio src='believe.mp3' id='believe'> 
+	</audio>
+	<div id='believe_text' onClick="play(document.getElementById('believe'));">believe</div>
+</td>
+<td>
+	<audio src='especially.mp3' id='especially'> 
+	</audio>
+	<div id='especially_text' onClick="play(document.getElementById('especially'));">especially</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='lot.mp3' id='lot'> 
+	</audio>
+	<div id='lot_text' onClick="play(document.getElementById('lot'));">a lot</div>
+</td>
+<td>
+	<audio src='with.mp3' id='with'> 
+	</audio>
+	<div id='with_text' onClick="play(document.getElementById('with'));">with</div>
+</td>
+<td>
+	<audio src='I m.mp3' id='I m'> 
+	</audio>
+	<div id='I m_text' onClick="play(document.getElementById('I m'));">I'm</div>
+</td>
+<td>
+	<audio src='school.mp3' id='school'> 
+	</audio>
+	<div id='school_text' onClick="play(document.getElementById('school'));">school</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='because.mp3' id='because'> 
+	</audio>
+	<div id='because_text' onClick="play(document.getElementById('because'));">because</div>
+</td>
+<td>
+	<audio src='different.mp3' id='different'> 
+	</audio>
+	<div id='different_text' onClick="play(document.getElementById('different'));">different</div>
+</td>
+<td>
+	<audio src='thought.mp3' id='thought'> 
+	</audio>
+	<div id='thought_text' onClick="play(document.getElementById('thought'));">thought</div>
+</td>
+<td>
+	<audio src='getting.mp3' id='getting'> 
+	</audio>
+	<div id='getting_text' onClick="play(document.getElementById('getting'));">getting</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='there.mp3' id='there'> 
+	</audio>
+	<div id='there_text' onClick="play(document.getElementById('there'));">there</div>
+</td>
+<td>
+	<audio src='outside.mp3' id='outside'> 
+	</audio>
+	<div id='outside_text' onClick="play(document.getElementById('outside'));">outside</div>
+</td>
+<td>
+	<audio src='let s.mp3' id='let s'> 
+	</audio>
+	<div id='let s_text' onClick="play(document.getElementById('let s'));">let's</div>
+</td>
+<td>
+	<audio src='started.mp3' id='started'> 
+	</audio>
+	<div id='started_text' onClick="play(document.getElementById('started'));">started</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='their.mp3' id='their'> 
+	</audio>
+	<div id='their_text' onClick="play(document.getElementById('their'));">their</div>
+</td>
+<td>
+	<audio src='we re.mp3' id='we re'> 
+	</audio>
+	<div id='we re_text' onClick="play(document.getElementById('we re'));">we're</div>
+</td>
+<td>
+	<audio src='before.mp3' id='before'> 
+	</audio>
+	<div id='before_text' onClick="play(document.getElementById('before'));">before</div>
+</td>
+<td>
+	<audio src='was.mp3' id='was'> 
+	</audio>
+	<div id='was_text' onClick="play(document.getElementById('was'));">was</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='that s.mp3' id='that s'> 
+	</audio>
+	<div id='that s_text' onClick="play(document.getElementById('that s'));">that's</div>
+</td>
+<td>
+	<audio src='through.mp3' id='through'> 
+	</audio>
+	<div id='through_text' onClick="play(document.getElementById('through'));">through</div>
+</td>
+<td>
+	<audio src='beautiful.mp3' id='beautiful'> 
+	</audio>
+	<div id='beautiful_text' onClick="play(document.getElementById('beautiful'));">beautiful</div>
+</td>
+<td>
+	<audio src='which.mp3' id='which'> 
+	</audio>
+	<div id='which_text' onClick="play(document.getElementById('which'));">which</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='they.mp3' id='they'> 
+	</audio>
+	<div id='they_text' onClick="play(document.getElementById('they'));">they</div>
+</td>
+<td>
+	<audio src='upon.mp3' id='upon'> 
+	</audio>
+	<div id='upon_text' onClick="play(document.getElementById('upon'));">upon</div>
+</td>
+<td>
+	<audio src='everything.mp3' id='everything'> 
+	</audio>
+	<div id='everything_text' onClick="play(document.getElementById('everything'));">everything</div>
+</td>
+<td>
+	<audio src='stopped.mp3' id='stopped'> 
+	</audio>
+	<div id='stopped_text' onClick="play(document.getElementById('stopped'));">stopped</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='it s.mp3' id='it s'> 
+	</audio>
+	<div id='it s_text' onClick="play(document.getElementById('it s'));">it's</div>
+</td>
+<td>
+	<audio src='probably.mp3' id='probably'> 
+	</audio>
+	<div id='probably_text' onClick="play(document.getElementById('probably'));">probably</div>
+</td>
+<td>
+	<audio src='very.mp3' id='very'> 
+	</audio>
+	<div id='very_text' onClick="play(document.getElementById('very'));">very</div>
+</td>
+<td>
+	<audio src='two.mp3' id='two'> 
+	</audio>
+	<div id='two_text' onClick="play(document.getElementById('two'));">two</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='when.mp3' id='when'> 
+	</audio>
+	<div id='when_text' onClick="play(document.getElementById('when'));">when</div>
+</td>
+<td>
+	<audio src='don t.mp3' id='don t'> 
+	</audio>
+	<div id='don t_text' onClick="play(document.getElementById('don t'));">don't</div>
+</td>
+<td>
+	<audio src='into.mp3' id='into'> 
+	</audio>
+	<div id='into_text' onClick="play(document.getElementById('into'));">into</div>
+</td>
+<td>
+	<audio src='Dad.mp3' id='Dad'> 
+	</audio>
+	<div id='Dad_text' onClick="play(document.getElementById('Dad'));">Dad</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='favorite.mp3' id='favorite'> 
+	</audio>
+	<div id='favorite_text' onClick="play(document.getElementById('favorite'));">favorite</div>
+</td>
+<td>
+	<audio src='sometimes.mp3' id='sometimes'> 
+	</audio>
+	<div id='sometimes_text' onClick="play(document.getElementById('sometimes'));">sometimes</div>
+</td>
+<td>
+	<audio src='caught.mp3' id='caught'> 
+	</audio>
+	<div id='caught_text' onClick="play(document.getElementById('caught'));">caught</div>
+</td>
+<td>
+	<audio src='took.mp3' id='took'> 
+	</audio>
+	<div id='took_text' onClick="play(document.getElementById('took'));">took</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='went.mp3' id='went'> 
+	</audio>
+	<div id='went_text' onClick="play(document.getElementById('went'));">went</div>
+</td>
+<td>
+	<audio src='off.mp3' id='off'> 
+	</audio>
+	<div id='off_text' onClick="play(document.getElementById('off'));">off</div>
+</td>
+<td>
+	<audio src='one.mp3' id='one'> 
+	</audio>
+	<div id='one_text' onClick="play(document.getElementById('one'));">one</div>
+</td>
+<td>
+	<audio src='presents.mp3' id='presents'> 
+	</audio>
+	<div id='presents_text' onClick="play(document.getElementById('presents'));">presents</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='were.mp3' id='were'> 
+	</audio>
+	<div id='were_text' onClick="play(document.getElementById('were'));">were</div>
+</td>
+<td>
+	<audio src='everybody.mp3' id='everybody'> 
+	</audio>
+	<div id='everybody_text' onClick="play(document.getElementById('everybody'));">everybody</div>
+</td>
+<td>
+	<audio src='what.mp3' id='what'> 
+	</audio>
+	<div id='what_text' onClick="play(document.getElementById('what'));">what</div>
+</td>
+<td>
+	<audio src='are.mp3' id='are'> 
+	</audio>
+	<div id='are_text' onClick="play(document.getElementById('are'));">are</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='our.mp3' id='our'> 
+	</audio>
+	<div id='our_text' onClick="play(document.getElementById('our'));">our</div>
+</td>
+<td>
+	<audio src='heard.mp3' id='heard'> 
+	</audio>
+	<div id='heard_text' onClick="play(document.getElementById('heard'));">heard</div>
+</td>
+<td>
+	<audio src='there s.mp3' id='there s'> 
+	</audio>
+	<div id='there s_text' onClick="play(document.getElementById('there s'));">there's</div>
+</td>
+<td>
+	<audio src='morning.mp3' id='morning'> 
+	</audio>
+	<div id='morning_text' onClick="play(document.getElementById('morning'));">morning</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='they re.mp3' id='they re'> 
+	</audio>
+	<div id='they re_text' onClick="play(document.getElementById('they re'));">they're</div>
+</td>
+<td>
+	<audio src='always.mp3' id='always'> 
+	</audio>
+	<div id='always_text' onClick="play(document.getElementById('always'));">always</div>
+</td>
+<td>
+	<audio src='little.mp3' id='little'> 
+	</audio>
+	<div id='little_text' onClick="play(document.getElementById('little'));">little</div>
+</td>
+<td>
+	<audio src='could.mp3' id='could'> 
+	</audio>
+	<div id='could_text' onClick="play(document.getElementById('could'));">could</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='said.mp3' id='said'> 
+	</audio>
+	<div id='said_text' onClick="play(document.getElementById('said'));">said</div>
+</td>
+<td>
+	<audio src='I.mp3' id='I'> 
+	</audio>
+	<div id='I_text' onClick="play(document.getElementById('I'));">I</div>
+</td>
+<td>
+	<audio src='doesn t.mp3' id='doesn t'> 
+	</audio>
+	<div id='doesn t_text' onClick="play(document.getElementById('doesn t'));">doesn't</div>
+</td>
+<td>
+	<audio src='around.mp3' id='around'> 
+	</audio>
+	<div id='around_text' onClick="play(document.getElementById('around'));">around</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='know.mp3' id='know'> 
+	</audio>
+	<div id='know_text' onClick="play(document.getElementById('know'));">know</div>
+</td>
+<td>
+	<audio src='something.mp3' id='something'> 
+	</audio>
+	<div id='something_text' onClick="play(document.getElementById('something'));">something</div>
+</td>
+<td>
+	<audio src='usually.mp3' id='usually'> 
+	</audio>
+	<div id='usually_text' onClick="play(document.getElementById('usually'));">usually</div>
+</td>
+<td>
+	<audio src='buy.mp3' id='buy'> 
+	</audio>
+	<div id='buy_text' onClick="play(document.getElementById('buy'));">buy</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='you re.mp3' id='you re'> 
+	</audio>
+	<div id='you re_text' onClick="play(document.getElementById('you re'));">you're</div>
+</td>
+<td>
+	<audio src='would.mp3' id='would'> 
+	</audio>
+	<div id='would_text' onClick="play(document.getElementById('would'));">would</div>
+</td>
+<td>
+	<audio src='clothes.mp3' id='clothes'> 
+	</audio>
+	<div id='clothes_text' onClick="play(document.getElementById('clothes'));">clothes</div>
+</td>
+<td>
+	<audio src='maybe.mp3' id='maybe'> 
+	</audio>
+	<div id='maybe_text' onClick="play(document.getElementById('maybe'));">maybe</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='friends.mp3' id='friends'> 
+	</audio>
+	<div id='friends_text' onClick="play(document.getElementById('friends'));">friends</div>
+</td>
+<td>
+	<audio src='want.mp3' id='want'> 
+	</audio>
+	<div id='want_text' onClick="play(document.getElementById('want'));">want</div>
+</td>
+<td>
+	<audio src='scared.mp3' id='scared'> 
+	</audio>
+	<div id='scared_text' onClick="play(document.getElementById('scared'));">scared</div>
+</td>
+<td>
+	<audio src='family.mp3' id='family'> 
+	</audio>
+	<div id='family_text' onClick="play(document.getElementById('family'));">family</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='really.mp3' id='really'> 
+	</audio>
+	<div id='really_text' onClick="play(document.getElementById('really'));">really</div>
+</td>
+<td>
+	<audio src='and.mp3' id='and'> 
+	</audio>
+	<div id='and_text' onClick="play(document.getElementById('and'));">and</div>
+</td>
+<td>
+	<audio src='everyone.mp3' id='everyone'> 
+	</audio>
+	<div id='everyone_text' onClick="play(document.getElementById('everyone'));">everyone</div>
+</td>
+<td>
+	<audio src='pretty.mp3' id='pretty'> 
+	</audio>
+	<div id='pretty_text' onClick="play(document.getElementById('pretty'));">pretty</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='finally.mp3' id='finally'> 
+	</audio>
+	<div id='finally_text' onClick="play(document.getElementById('finally'));">finally</div>
+</td>
+<td>
+	<audio src='house.mp3' id='house'> 
+	</audio>
+	<div id='house_text' onClick="play(document.getElementById('house'));">house</div>
+</td>
+<td>
+	<audio src='have.mp3' id='have'> 
+	</audio>
+	<div id='have_text' onClick="play(document.getElementById('have'));">have</div>
+</td>
+<td>
+	<audio src='tired.mp3' id='tired'> 
+	</audio>
+	<div id='tired_text' onClick="play(document.getElementById('tired'));">tired</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='where.mp3' id='where'> 
+	</audio>
+	<div id='where_text' onClick="play(document.getElementById('where'));">where</div>
+</td>
+<td>
+	<audio src='once.mp3' id='once'> 
+	</audio>
+	<div id='once_text' onClick="play(document.getElementById('once'));">once</div>
+</td>
+<td>
+	<audio src='swimming.mp3' id='swimming'> 
+	</audio>
+	<div id='swimming_text' onClick="play(document.getElementById('swimming'));">swimming</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='again.mp3' id='again'> 
+	</audio>
+	<div id='again_text' onClick="play(document.getElementById('again'));">again</div>
+</td>
+<td>
+	<audio src='to.mp3' id='to'> 
+	</audio>
+	<div id='to_text' onClick="play(document.getElementById('to'));">to</div>
+</td>
+<td>
+	<audio src='about.mp3' id='about'> 
+	</audio>
+	<div id='about_text' onClick="play(document.getElementById('about'));">about</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='then.mp3' id='then'> 
+	</audio>
+	<div id='then_text' onClick="play(document.getElementById('then'));">then</div>
+</td>
+<td>
+	<audio src='like.mp3' id='like'> 
+	</audio>
+	<div id='like_text' onClick="play(document.getElementById('like'));">like</div>
+</td>
+<td>
+	<audio src='first.mp3' id='first'> 
+	</audio>
+	<div id='first_text' onClick="play(document.getElementById('first'));">first</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='didn t.mp3' id='didn t'> 
+	</audio>
+	<div id='didn t_text' onClick="play(document.getElementById('didn t'));">didn't</div>
+</td>
+<td>
+	<audio src='whole.mp3' id='whole'> 
+	</audio>
+	<div id='whole_text' onClick="play(document.getElementById('whole'));">whole</div>
+</td>
+<td>
+	<audio src='happened.mp3' id='happened'> 
+	</audio>
+	<div id='happened_text' onClick="play(document.getElementById('happened'));">happened</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='people.mp3' id='people'> 
+	</audio>
+	<div id='people_text' onClick="play(document.getElementById('people'));">people</div>
+</td>
+<td>
+	<audio src='another.mp3' id='another'> 
+	</audio>
+	<div id='another_text' onClick="play(document.getElementById('another'));">another</div>
+</td>
+<td>
+	<audio src='Mom.mp3' id='Mom'> 
+	</audio>
+	<div id='Mom_text' onClick="play(document.getElementById('Mom'));">Mom</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+
+</html>
