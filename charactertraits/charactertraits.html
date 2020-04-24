@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>charactertraits</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="generator" content="Geany 1.23.1" />
+    <link rel="stylesheet" type="text/css" href='../css_file.css'>
+    <script>
+        function revert_color(obj){
+            setTimeout(function (){document.getElementById(obj.id).style.backgroundColor = 'transparent';},1000);
+        };
+        function play(sndobj){
+            txtobjId = sndobj.id + "_text";
+            txtobj = document.getElementById(txtobjId);
+            document.getElementById(txtobj.id).style.backgroundColor = 'yellow';
+            document.getElementById(sndobj.id).play();
+            document.getElementById(sndobj.id).addEventListener( "ended", revert_color(txtobj));
+        };
+    </script>
+</head>
+
+<body>
+<div><img align="left" src="../click.png" width="75" height="75"></img><h2>Click to listen to the words.</h2></div>
+<div><table border=1>
+<tr>
+<td>
+	<audio src='active.mp3' id='active'> 
+	</audio>
+	<div id='active_text' onClick="play(document.getElementById('active'));">active</div>
+</td>
+<td>
+	<audio src='daring.mp3' id='daring'> 
+	</audio>
+	<div id='daring_text' onClick="play(document.getElementById('daring'));">daring</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='adventurous.mp3' id='adventurous'> 
+	</audio>
+	<div id='adventurous_text' onClick="play(document.getElementById('adventurous'));">adventurous</div>
+</td>
+<td>
+	<audio src='dependable.mp3' id='dependable'> 
+	</audio>
+	<div id='dependable_text' onClick="play(document.getElementById('dependable'));">dependable</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='affectionate.mp3' id='affectionate'> 
+	</audio>
+	<div id='affectionate_text' onClick="play(document.getElementById('affectionate'));">affectionate</div>
+</td>
+<td>
+	<audio src='happy-go-lucky.mp3' id='happy-go-lucky'> 
+	</audio>
+	<div id='happy-go-lucky_text' onClick="play(document.getElementById('happy-go-lucky'));">happy-go-lucky</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='afraid.mp3' id='afraid'> 
+	</audio>
+	<div id='afraid_text' onClick="play(document.getElementById('afraid'));">afraid</div>
+</td>
+<td>
+	<audio src='humorous.mp3' id='humorous'> 
+	</audio>
+	<div id='humorous_text' onClick="play(document.getElementById('humorous'));">humorous</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='ambitious.mp3' id='ambitious'> 
+	</audio>
+	<div id='ambitious_text' onClick="play(document.getElementById('ambitious'));">ambitious</div>
+</td>
+<td>
+	<audio src='impatient.mp3' id='impatient'> 
+	</audio>
+	<div id='impatient_text' onClick="play(document.getElementById('impatient'));">impatient</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='bossy.mp3' id='bossy'> 
+	</audio>
+	<div id='bossy_text' onClick="play(document.getElementById('bossy'));">bossy</div>
+</td>
+<td>
+	<audio src='noisy.mp3' id='noisy'> 
+	</audio>
+	<div id='noisy_text' onClick="play(document.getElementById('noisy'));">noisy</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='brave.mp3' id='brave'> 
+	</audio>
+	<div id='brave_text' onClick="play(document.getElementById('brave'));">brave</div>
+</td>
+<td>
+	<audio src='obedient.mp3' id='obedient'> 
+	</audio>
+	<div id='obedient_text' onClick="play(document.getElementById('obedient'));">obedient</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='brilliant.mp3' id='brilliant'> 
+	</audio>
+	<div id='brilliant_text' onClick="play(document.getElementById('brilliant'));">brilliant</div>
+</td>
+<td>
+	<audio src='observant.mp3' id='observant'> 
+	</audio>
+	<div id='observant_text' onClick="play(document.getElementById('observant'));">observant</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='calm.mp3' id='calm'> 
+	</audio>
+	<div id='calm_text' onClick="play(document.getElementById('calm'));">calm</div>
+</td>
+<td>
+	<audio src='peaceful.mp3' id='peaceful'> 
+	</audio>
+	<div id='peaceful_text' onClick="play(document.getElementById('peaceful'));">peaceful</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='courageous.mp3' id='courageous'> 
+	</audio>
+	<div id='courageous_text' onClick="play(document.getElementById('courageous'));">courageous</div>
+</td>
+<td>
+	<audio src='silly.mp3' id='silly'> 
+	</audio>
+	<div id='silly_text' onClick="play(document.getElementById('silly'));">silly</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='curious.mp3' id='curious'> 
+	</audio>
+	<div id='curious_text' onClick="play(document.getElementById('curious'));">curious</div>
+</td>
+<td>
+	<audio src='skillful.mp3' id='skillful'> 
+	</audio>
+	<div id='skillful_text' onClick="play(document.getElementById('skillful'));">skillful</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='clever.mp3' id='clever'> 
+	</audio>
+	<div id='clever_text' onClick="play(document.getElementById('clever'));">clever</div>
+</td>
+<td>
+	<audio src='sly.mp3' id='sly'> 
+	</audio>
+	<div id='sly_text' onClick="play(document.getElementById('sly'));">sly</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='competitive.mp3' id='competitive'> 
+	</audio>
+	<div id='competitive_text' onClick="play(document.getElementById('competitive'));">competitive</div>
+</td>
+<td>
+	<audio src='smart.mp3' id='smart'> 
+	</audio>
+	<div id='smart_text' onClick="play(document.getElementById('smart'));">smart</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='confident.mp3' id='confident'> 
+	</audio>
+	<div id='confident_text' onClick="play(document.getElementById('confident'));">confident</div>
+</td>
+<td>
+	<audio src='sneaky.mp3' id='sneaky'> 
+	</audio>
+	<div id='sneaky_text' onClick="play(document.getElementById('sneaky'));">sneaky</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='enthusiastic.mp3' id='enthusiastic'> 
+	</audio>
+	<div id='enthusiastic_text' onClick="play(document.getElementById('enthusiastic'));">enthusiastic</div>
+</td>
+<td>
+	<audio src='stubborn.mp3' id='stubborn'> 
+	</audio>
+	<div id='stubborn_text' onClick="play(document.getElementById('stubborn'));">stubborn</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='friendly.mp3' id='friendly'> 
+	</audio>
+	<div id='friendly_text' onClick="play(document.getElementById('friendly'));">friendly</div>
+</td>
+<td>
+	<audio src='studious.mp3' id='studious'> 
+	</audio>
+	<div id='studious_text' onClick="play(document.getElementById('studious'));">studious</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='generous.mp3' id='generous'> 
+	</audio>
+	<div id='generous_text' onClick="play(document.getElementById('generous'));">generous</div>
+</td>
+<td>
+	<audio src='talented.mp3' id='talented'> 
+	</audio>
+	<div id='talented_text' onClick="play(document.getElementById('talented'));">talented</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='independent.mp3' id='independent'> 
+	</audio>
+	<div id='independent_text' onClick="play(document.getElementById('independent'));">independent</div>
+</td>
+<td>
+	<audio src='talkative.mp3' id='talkative'> 
+	</audio>
+	<div id='talkative_text' onClick="play(document.getElementById('talkative'));">talkative</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='lazy.mp3' id='lazy'> 
+	</audio>
+	<div id='lazy_text' onClick="play(document.getElementById('lazy'));">lazy</div>
+</td>
+<td>
+	<audio src='wise.mp3' id='wise'> 
+	</audio>
+	<div id='wise_text' onClick="play(document.getElementById('wise'));">wise</div>
+</td>
+</tr>
+<tr>
+<td>
+	<audio src='lovable.mp3' id='lovable'> 
+	</audio>
+	<div id='lovable_text' onClick="play(document.getElementById('lovable'));">lovable</div>
+</td>
+<td>
+	<audio src='witty.mp3' id='witty'> 
+	</audio>
+	<div id='witty_text' onClick="play(document.getElementById('witty'));">witty</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+
+</html>
